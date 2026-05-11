@@ -1,0 +1,15 @@
+{
+  "manifest_version": 3,
+  "name": "Tab Saver Pro",
+  "version": "1.0.0",
+  "description": "Save your current window and its tabs, close it, and restore it later to organize your workflow.",
+  "permissions": [
+    "tabs",
+    "windows",
+    "storage"
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "Tab Saver Pro"
+  }
+}

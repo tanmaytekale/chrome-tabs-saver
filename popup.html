@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tab Saver Pro</title>
+  <link rel="stylesheet" href="popup.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Tab Saver Pro</h1>
+      <p>Save and restore your workspace</p>
+    </header>
+
+    <div class="save-section">
+      <input type="text" id="session-name" placeholder="Name your session (e.g. Work, Taxes)" />
+      <button id="save-btn" class="primary-btn">Save Current Window</button>
+    </div>
+
+    <div class="sessions-section">
+      <h2>Saved Sessions</h2>
+      <div id="sessions-list" class="sessions-list">
+        <!-- Sessions will be injected here -->
+      </div>
+    </div>
+  </div>
+
+  <template id="session-template">
+    <div class="session-item">
+      <div class="session-info">
+        <h3 class="session-title"></h3>
+        <p class="session-meta"></p>
+        <div class="session-favicons"></div>
+      </div>
+      <div class="session-actions">
+        <button class="restore-btn" title="Restore in new window">Restore</button>
+        <button class="delete-btn" title="Delete session">✕</button>
+      </div>
+    </div>
+  </template>
+
+  <script src="popup.js"></script>
+</body>
+</html>
